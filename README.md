@@ -2,14 +2,24 @@
 
 Medique is a JavaFX desktop medicine reminder with local SQLite storage. It supports prescription schedules, dose reminders, adherence history, caregiver contacts, and optional backend synchronization.
 
-## Requirements
+## Download and run the Windows release
+
+Download the latest Windows x64 ZIP from [GitHub Releases](https://github.com/ShravNaik/medique/releases/latest), then:
+
+1. Extract the ZIP to a folder.
+2. Open the extracted `Medique` folder and run `Medique.exe`.
+3. Create an account in the app, or sign in if you already have one.
+
+Keep the extracted folder together; the executable needs the other files beside it. The release includes its own Java runtime, so you do not need to install Java or Maven. This is a portable app folder, not an installer.
+
+## Build requirements
 
 - JDK 21 or newer
 - Maven 3.9 or newer on `PATH`
 
 If `JAVA_HOME` is set, the build scripts use that JDK.
 
-## Run and test
+## Build and test
 
 ```bat
 run.bat

@@ -1,0 +1,373 @@
+/* Medique - Clinical Swiss Teal Interface */
+
+.root {
+    -fx-font-family: 'Segoe UI', -apple-system, Arial, sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* Base Light Theme (Graphite & Teal) */
+.theme-light {
+    -fx-background-color: #FAFAFA;
+    -fx-text-fill: #111827;
+    -surface-bg: #FFFFFF;
+    -surface-raised: #F4F4F5;
+    -hairline-color: #E4E4E7;
+    -text-primary: #111827;
+    -text-secondary: #52525B;
+    -text-muted: #71717A;
+    -accent-teal: #0D9488;
+    -accent-teal-hover: #0F766E;
+    -status-taken: #16A34A;
+    -status-missed: #DC2626;
+    -status-snoozed: #D97706;
+}
+
+/* Base Dark Theme */
+.theme-dark {
+    -fx-background-color: #111827;
+    -fx-text-fill: #F9FAFB;
+    -surface-bg: #1F2937;
+    -surface-raised: #374151;
+    -hairline-color: #374151;
+    -text-primary: #F9FAFB;
+    -text-secondary: #9CA3AF;
+    -text-muted: #6B7280;
+    -accent-teal: #14B8A6;
+    -accent-teal-hover: #2DD4BF;
+    -status-taken: #22C55E;
+    -status-missed: #EF4444;
+    -status-snoozed: #F59E0B;
+}
+
+/* Large Accessibility Font Scaling */
+.font-large {
+    -fx-font-size: 17px;
+}
+
+/* Sidebar Navigation - Quiet & Structured */
+.sidebar {
+    -fx-background-color: #18181B;
+    -fx-padding: 24px 16px;
+    -fx-border-color: transparent #27272A transparent transparent;
+    -fx-border-width: 0 1px 0 0;
+}
+
+.sidebar-title {
+    -fx-text-fill: #F4F4F5;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+
+.sidebar-sub {
+    -fx-text-fill: #71717A;
+    -fx-font-size: 12px;
+}
+
+.sidebar-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #A1A1AA;
+    -fx-font-size: 14px;
+    -fx-alignment: BASELINE_LEFT;
+    -fx-padding: 8px 12px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.sidebar-btn:hover {
+    -fx-background-color: #27272A;
+    -fx-text-fill: #F4F4F5;
+}
+
+.sidebar-btn.active {
+    -fx-background-color: #27272A;
+    -fx-text-fill: #14B8A6;
+    -fx-font-weight: bold;
+}
+
+.sidebar-logout {
+    -fx-background-color: transparent;
+    -fx-text-fill: #71717A;
+    -fx-font-size: 13px;
+    -fx-alignment: BASELINE_LEFT;
+    -fx-padding: 8px 12px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+.sidebar-logout:hover {
+    -fx-background-color: #27272A;
+    -fx-text-fill: #EF4444;
+}
+
+/* Cards & Surfaces - Quiet Hairline Depth */
+.card {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px;
+    -fx-border-color: #E4E4E7;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-padding: 20px;
+}
+
+.theme-dark .card {
+    -fx-background-color: #18181B;
+    -fx-border-color: #27272A;
+}
+
+/* Stat Cards */
+.stat-card {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px;
+    -fx-border-color: #E4E4E7;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-padding: 16px 20px;
+}
+
+.theme-dark .stat-card {
+    -fx-background-color: #18181B;
+    -fx-border-color: #27272A;
+}
+
+.stat-label {
+    -fx-text-fill: #71717A;
+    -fx-font-size: 13px;
+}
+
+.theme-dark .stat-label {
+    -fx-text-fill: #A1A1AA;
+}
+
+.stat-figure {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #111827;
+}
+
+.theme-dark .stat-figure {
+    -fx-text-fill: #F4F4F5;
+}
+
+.stat-sub {
+    -fx-text-fill: #71717A;
+    -fx-font-size: 12px;
+}
+
+/* Row Items / Dose Items */
+.dose-row {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 8px;
+    -fx-border-color: #E4E4E7;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-padding: 12px 16px;
+}
+
+.theme-dark .dose-row {
+    -fx-background-color: #18181B;
+    -fx-border-color: #27272A;
+}
+
+.dose-med-name {
+    -fx-text-fill: #111827;
+}
+
+.theme-dark .dose-med-name {
+    -fx-text-fill: #F9FAFB;
+}
+
+.dose-time {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0D9488;
+}
+
+.theme-dark .dose-time {
+    -fx-text-fill: #14B8A6;
+}
+
+/* Refined Buttons - No Glowing Pills */
+.btn-primary {
+    -fx-background-color: #0D9488;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+.btn-primary:hover {
+    -fx-background-color: #0F766E;
+}
+
+.theme-dark .btn-primary {
+    -fx-background-color: #14B8A6;
+    -fx-text-fill: #0F172A;
+}
+.theme-dark .btn-primary:hover {
+    -fx-background-color: #2DD4BF;
+}
+
+.btn-secondary {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3F3F46;
+    -fx-border-color: #D4D4D8;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 7px 15px;
+    -fx-cursor: hand;
+}
+.btn-secondary:hover {
+    -fx-background-color: #F4F4F5;
+    -fx-text-fill: #18181B;
+}
+
+.theme-dark .btn-secondary {
+    -fx-text-fill: #D4D4D8;
+    -fx-border-color: #3F3F46;
+}
+.theme-dark .btn-secondary:hover {
+    -fx-background-color: #27272A;
+    -fx-text-fill: #FAFAFA;
+}
+
+.btn-success {
+    -fx-background-color: #059669;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+.btn-success:hover {
+    -fx-background-color: #047857;
+}
+
+.btn-warning {
+    -fx-background-color: #D97706;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+.btn-warning:hover {
+    -fx-background-color: #B45309;
+}
+
+.btn-danger {
+    -fx-background-color: #DC2626;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+.btn-danger:hover {
+    -fx-background-color: #B91C1C;
+}
+
+/* Tables - Quiet Hairline Styling */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #E4E4E7;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.theme-dark .table-view {
+    -fx-border-color: #27272A;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #F4F4F5;
+}
+
+.theme-dark .table-view .column-header-background {
+    -fx-background-color: #27272A;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-text-fill: #71717A;
+    -fx-padding: 10px 8px;
+}
+
+.table-row-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #F4F4F5 transparent transparent transparent;
+    -fx-border-width: 1px;
+    -fx-padding: 6px 0;
+}
+
+.theme-dark .table-row-cell {
+    -fx-background-color: #18181B;
+    -fx-border-color: #27272A transparent transparent transparent;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #F8FAFC;
+}
+
+.theme-dark .table-row-cell:hover {
+    -fx-background-color: #27272A;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #F0FDFA;
+    -fx-text-fill: #0F766E;
+}
+
+.theme-dark .table-row-cell:selected {
+    -fx-background-color: #134E4A;
+    -fx-text-fill: #CCFBF1;
+}
+
+.table-view .table-row-cell:selected .table-cell {
+    -fx-text-fill: #0F766E;
+}
+
+.table-view .table-row-cell:selected .table-cell .text {
+    -fx-fill: #0F766E;
+}
+
+.theme-dark .table-view .table-row-cell:selected .table-cell {
+    -fx-text-fill: #CCFBF1;
+}
+
+.theme-dark .table-view .table-row-cell:selected .table-cell .text {
+    -fx-fill: #CCFBF1;
+}
+
+/* Alert Popup Dialog - Surgical Restraint */
+.alert-popup-root {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E4E4E7;
+    -fx-border-width: 1px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 28px;
+}
+
+.alert-category-tag {
+    -fx-text-fill: #0D9488;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.alert-med-name {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #18181B;
+}
+
+.alert-dose-text {
+    -fx-font-size: 16px;
+    -fx-text-fill: #52525B;
+}
+
+.alert-instructions {
+    -fx-font-size: 14px;
+    -fx-text-fill: #71717A;
+}

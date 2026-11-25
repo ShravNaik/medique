@@ -1,0 +1,15 @@
+/target/
+/dist/
+/Medique.exe
+/dependency-reduced-pom.xml
+
+# Local SQLite data
+*.db
+*.db-shm
+*.db-wal
+
+# Local IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

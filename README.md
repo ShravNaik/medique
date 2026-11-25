@@ -1,4 +1,12 @@
-# Medique
+<div align="center">
+<img src="https://i.ibb.co/zHbqnKyP/Frame-1.png" alt="Frame 1" border="0">
+</div>
+
+<div align="right">
+  <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white">
+</div>
+
+# Medique: Medicine Reminder App
 
 Medique is a JavaFX desktop medicine reminder with local SQLite storage. It supports prescription schedules, dose reminders, adherence history, caregiver contacts, and optional backend synchronization.
 
